@@ -42,6 +42,8 @@ def seed_data():
             {"name": "C", "slug": "c", "category": "Languages", "icon_name": "c"},
             {"name": "SQL", "slug": "sql", "category": "Languages", "icon_name": "sql"},
             {"name": "JavaScript", "slug": "javascript", "category": "Languages", "icon_name": "javascript"},
+            {"name": "TypeScript", "slug": "typescript", "category": "Languages", "icon_name": "typescript"},
+            {"name": "Next.js", "slug": "nextjs", "category": "Frontend", "icon_name": "nextjs"},
             
             # Agentic AI
             {"name": "LangGraph", "slug": "langgraph", "category": "Agentic AI", "icon_name": "brain"},
@@ -188,33 +190,18 @@ def seed_data():
         print("Seeding Projects & Metrics...")
         projects_data = [
             {
-                "title": "Auto-Triage — Bug Triage Multi-Agent System",
-                "slug": "auto-triage",
-                "short_description": "LangGraph-based multi-agent system for automated bug triage and issue routing across printer platforms at HP Inc. Includes reusable agent/tool abstractions via AgentSDK, LLM guardrails, and Gradio-based log analysis applications.",
-                "full_description": "## Overview\nAuto-Triage is a production-grade multi-agent platform designed to automate bug triage, categorization, and routing at HP Inc.\n\n## Architecture\n- Built reusable agent and tool abstractions using OpenAI Agents SDK (AgentSDK).\n- Developed structured logging and observability pipelines to monitor LLM decisions.\n- Implemented response validation guardrails to prevent hallucination.",
-                "github_url": "https://github.com/GangSagar",
+                "title": "Chess Notes",
+                "slug": "chess-notes",
+                "short_description": "An interactive, web-based chess study application allowing users to set up custom positions, analyze moves, write annotated markdown notes, and visualize variations side-by-side.",
+                "full_description": "## Overview\nChess Notes is a specialized web application designed for chess players, coaches, and students to document their chess studies, analyze openings, and annotate complex endgames.\n\n## Key Features\n- **Interactive Chessboards**: Multi-board setup for side-by-side variation analysis.\n- **Move Annotation**: Integrated with Chess.js for valid move validation and PGN annotation.\n- **Markdown Notes**: Rich text editing for move-by-move annotation and positional insights.\n- **Position Export**: Export/import positions via FEN/PGN notations.",
+                "github_url": "https://github.com/GangSagar/Chess-Notes",
                 "live_url": None,
                 "featured": True,
                 "display_order": 1,
-                "techs": ["langgraph", "agents-sdk", "python", "gradio"],
+                "techs": ["typescript", "javascript", "nextjs"],
                 "metrics": [
-                    {"metric_name": "Prediction Accuracy", "metric_value": "+60%"},
-                    {"metric_name": "Onboarding Effort", "metric_value": "-50%"}
-                ]
-            },
-            {
-                "title": "FleetAI — Enterprise Printer Management",
-                "slug": "fleet-ai",
-                "short_description": "LangGraph multi-agent workflow for enterprise printer onboarding and fleet management at HP Inc. Features multi-layer Knowledge Graph ingestion validation, backend APIs bridging AI agents and frontend, and a reusable RAGAS/DeepEval evaluation framework.",
-                "full_description": "## Overview\nFleetAI scales printer fleet management using multi-agent systems and Knowledge Graphs.\n\n## Key Deliverables\n- Structured ingestion pipeline utilizing Neo4j Knowledge Graphs.\n- API routing via Django and Django REST Framework.\n- Automatic scoring of prompt updates with RAGAS and DeepEval.",
-                "github_url": "https://github.com/GangSagar",
-                "live_url": None,
-                "featured": True,
-                "display_order": 2,
-                "techs": ["langgraph", "neo4j", "ragas", "deepeval", "django"],
-                "metrics": [
-                    {"metric_name": "Data Consistency", "metric_value": "+High"},
-                    {"metric_name": "Debugging Efficiency", "metric_value": "+30%"}
+                    {"metric_name": "Move Validation", "metric_value": "Real-time"},
+                    {"metric_name": "Export Format", "metric_value": "FEN/PGN"}
                 ]
             }
         ]

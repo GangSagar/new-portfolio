@@ -3,51 +3,24 @@ import { Project, Experience, Skill, Achievement, Certification, SocialLink } fr
 export const defaultProjects: Project[] = [
   {
     id: "1",
-    title: "Auto-Triage — Bug Triage Multi-Agent System",
-    slug: "auto-triage",
-    short_description: "LangGraph-based multi-agent system for automated bug triage and issue routing across printer platforms at HP Inc. Includes reusable agent/tool abstractions via AgentSDK, LLM guardrails, and Gradio-based log analysis applications.",
-    full_description: "",
-    github_url: "https://github.com/GangSagar",
+    title: "Chess Notes",
+    slug: "chess-notes",
+    short_description: "An interactive, web-based chess study application allowing users to set up custom positions, analyze moves, write annotated markdown notes, and visualize variations side-by-side.",
+    full_description: "## Overview\nChess Notes is a specialized web application designed for chess players, coaches, and students to document their chess studies, analyze openings, and annotate complex endgames.\n\n## Key Features\n- **Interactive Chessboards**: Multi-board setup for side-by-side variation analysis.\n- **Move Annotation**: Integrated with Chess.js for valid move validation and PGN annotation.\n- **Markdown Notes**: Rich text editing for move-by-move annotation and positional insights.\n- **Position Export**: Export/import positions via FEN/PGN notations.",
+    github_url: "https://github.com/GangSagar/Chess-Notes",
     live_url: null,
     thumbnail_url: null,
     featured: true,
     display_order: 1,
     status: "completed",
     technologies: [
-      { id: "1", name: "LangGraph", slug: "langgraph", icon_name: null, category: "ai" },
-      { id: "2", name: "OpenAI Agents SDK", slug: "agents-sdk", icon_name: null, category: "ai" },
-      { id: "3", name: "Python", slug: "python", icon_name: null, category: "languages" },
-      { id: "4", name: "Gradio", slug: "gradio", icon_name: null, category: "backend" }
+      { id: "101", name: "TypeScript", slug: "typescript", icon_name: null, category: "languages" },
+      { id: "102", name: "JavaScript", slug: "javascript", icon_name: null, category: "languages" },
+      { id: "103", name: "Next.js", slug: "nextjs", icon_name: null, category: "frontend" }
     ],
     metrics: [
-      { metric_name: "Prediction Accuracy", metric_value: "+60%" },
-      { metric_name: "Onboarding Effort", metric_value: "-50%" }
-    ],
-    created_at: "",
-    updated_at: ""
-  },
-  {
-    id: "2",
-    title: "FleetAI — Enterprise Printer Management",
-    slug: "fleet-ai",
-    short_description: "LangGraph multi-agent workflow for enterprise printer onboarding and fleet management at HP Inc. Features multi-layer Knowledge Graph ingestion validation, backend APIs bridging AI agents and frontend, and a reusable RAGAS/DeepEval evaluation framework.",
-    full_description: "",
-    github_url: "https://github.com/GangSagar",
-    live_url: null,
-    thumbnail_url: null,
-    featured: true,
-    display_order: 2,
-    status: "completed",
-    technologies: [
-      { id: "5", name: "LangGraph", slug: "langgraph", icon_name: null, category: "ai" },
-      { id: "6", name: "Neo4j", slug: "neo4j", icon_name: null, category: "databases" },
-      { id: "7", name: "RAGAS", slug: "ragas", icon_name: null, category: "ai" },
-      { id: "8", name: "DeepEval", slug: "deepeval", icon_name: null, category: "ai" },
-      { id: "9", name: "Django", slug: "django", icon_name: null, category: "backend" }
-    ],
-    metrics: [
-      { metric_name: "Data Consistency", metric_value: "+High" },
-      { metric_name: "Debugging Efficiency", metric_value: "+30%" }
+      { metric_name: "Move Validation", metric_value: "Real-time" },
+      { metric_name: "Export Format", metric_value: "FEN/PGN" }
     ],
     created_at: "",
     updated_at: ""

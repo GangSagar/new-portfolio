@@ -1,0 +1,1022 @@
+[
+{
+    "model": "core.siteconfiguration",
+    "pk": "650d47d6-abef-4636-ba4e-ef3f7da6a87a",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.486Z",
+        "updated_at": "2026-06-24T17:38:18.486Z",
+        "is_active": true,
+        "is_deleted": false,
+        "config_key": "HERO_SUBTITLE",
+        "config_value": "Specializing in AI Engineering, Agentic Workflows, and Scalable Backend Systems."
+    }
+},
+{
+    "model": "core.siteconfiguration",
+    "pk": "8e7a3e8c-f1fb-4da1-9afa-7d18d868105a",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.485Z",
+        "updated_at": "2026-06-24T17:38:18.485Z",
+        "is_active": true,
+        "is_deleted": false,
+        "config_key": "WELCOME_TEXT",
+        "config_value": "Welcome to my engineering portfolio!"
+    }
+},
+{
+    "model": "core.sociallink",
+    "pk": "6fa531ec-7d88-40bd-b843-3b6f5145cc71",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.482Z",
+        "updated_at": "2026-06-24T17:38:18.482Z",
+        "is_active": true,
+        "is_deleted": false,
+        "platform": "github",
+        "url": "https://github.com/GangSagar",
+        "icon_name": null,
+        "display_order": 1
+    }
+},
+{
+    "model": "core.sociallink",
+    "pk": "bd9a5e96-0d88-4b6d-ae03-166900385d94",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.483Z",
+        "updated_at": "2026-06-24T17:38:18.483Z",
+        "is_active": true,
+        "is_deleted": false,
+        "platform": "linkedin",
+        "url": "https://linkedin.com/in/ganga-sagar",
+        "icon_name": null,
+        "display_order": 2
+    }
+},
+{
+    "model": "core.sociallink",
+    "pk": "cebf1dfe-1a1f-4bfb-8f36-8535d1090192",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.484Z",
+        "updated_at": "2026-06-24T17:38:18.484Z",
+        "is_active": true,
+        "is_deleted": false,
+        "platform": "mail",
+        "url": "mailto:hrnharshit@gmail.com",
+        "icon_name": null,
+        "display_order": 3
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "00f688b2-92c7-41c9-908f-c03b11395b0a",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.430Z",
+        "updated_at": "2026-06-24T17:38:18.430Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Python",
+        "slug": "python",
+        "icon_name": "python",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "04d38fd0-ab29-4665-b310-f41ad78517a6",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.454Z",
+        "updated_at": "2026-06-24T17:38:18.454Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Linux",
+        "slug": "linux",
+        "icon_name": "linux",
+        "category": "Tools"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "190794ad-669f-43ba-bc8f-626bc14d89c3",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.450Z",
+        "updated_at": "2026-06-24T17:38:18.450Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LightGBM",
+        "slug": "lightgbm",
+        "icon_name": "cpu",
+        "category": "ML/Data"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "278bd082-8a8c-4db8-a3f1-80073a570b3c",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.452Z",
+        "updated_at": "2026-06-24T17:38:18.452Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Docker",
+        "slug": "docker",
+        "icon_name": "docker",
+        "category": "Tools"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "28fd33cf-2602-4443-ae90-094b1c0e2dcf",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.453Z",
+        "updated_at": "2026-06-24T17:38:18.453Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Git",
+        "slug": "git",
+        "icon_name": "git",
+        "category": "Tools"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "2d3adb2d-ddb6-4485-a9fe-c19f20773120",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.448Z",
+        "updated_at": "2026-06-24T17:38:18.448Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "REST APIs",
+        "slug": "rest-apis",
+        "icon_name": "server",
+        "category": "Backend"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "450c7252-3e2b-4fcc-be78-df917732978b",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.435Z",
+        "updated_at": "2026-06-24T17:38:18.435Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "JavaScript",
+        "slug": "javascript",
+        "icon_name": "javascript",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "4535773b-0245-471c-af93-371193492be4",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.455Z",
+        "updated_at": "2026-06-24T17:38:18.455Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "WSL",
+        "slug": "wsl",
+        "icon_name": "linux",
+        "category": "Tools"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "4cfac620-9e0d-4d26-b69e-a62b1f292848",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.440Z",
+        "updated_at": "2026-06-24T17:38:18.440Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Multi-Agent Systems",
+        "slug": "multi-agent",
+        "icon_name": "brain",
+        "category": "Agentic AI"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "4d5dc32d-d633-43da-8300-b514414ab983",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.441Z",
+        "updated_at": "2026-06-24T17:38:18.441Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "RAG",
+        "slug": "rag",
+        "icon_name": "brain",
+        "category": "Agentic AI"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "4f2ce930-805d-4b51-a73c-12a2fd437312",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.442Z",
+        "updated_at": "2026-06-24T17:38:18.442Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Neo4j",
+        "slug": "neo4j",
+        "icon_name": "database",
+        "category": "Knowledge Graphs"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "5f4531a7-1b15-42ae-845a-df8671c9a01a",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.443Z",
+        "updated_at": "2026-06-24T17:38:18.443Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Cypher",
+        "slug": "cypher",
+        "icon_name": "database",
+        "category": "Knowledge Graphs"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "6c342348-1e87-4c16-b1fd-785a93049425",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.434Z",
+        "updated_at": "2026-06-24T17:38:18.434Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "SQL",
+        "slug": "sql",
+        "icon_name": "sql",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "6d5e4a3d-46d6-4004-9d66-9424ee33214d",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.444Z",
+        "updated_at": "2026-06-24T17:38:18.444Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "RAGAS",
+        "slug": "ragas",
+        "icon_name": "check",
+        "category": "LLM Evaluation"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "76da168c-6769-427c-a662-31ea6a041908",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.445Z",
+        "updated_at": "2026-06-24T17:38:18.445Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "DeepEval",
+        "slug": "deepeval",
+        "icon_name": "check",
+        "category": "LLM Evaluation"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "783fe67e-e5e0-4568-81b6-5c74b5173956",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.432Z",
+        "updated_at": "2026-06-24T17:38:18.432Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "C++",
+        "slug": "cpp",
+        "icon_name": "cpp",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "7c625fae-cd21-45b1-91bb-7fab5ad1caf4",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.448Z",
+        "updated_at": "2026-06-24T17:38:18.448Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Gradio",
+        "slug": "gradio",
+        "icon_name": "server",
+        "category": "Backend"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "8990fca0-cead-4905-8db4-9878d7de4b1d",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.435Z",
+        "updated_at": "2026-06-24T17:38:18.435Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "TypeScript",
+        "slug": "typescript",
+        "icon_name": "typescript",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "941e80c9-5c8b-4334-af80-389e56656d0b",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.451Z",
+        "updated_at": "2026-06-24T17:38:18.451Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "FAISS",
+        "slug": "faiss",
+        "icon_name": "cpu",
+        "category": "ML/Data"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "97d3a6ad-c10e-4b7a-9fed-13d2afae11a3",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.446Z",
+        "updated_at": "2026-06-24T17:38:18.446Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "GEval",
+        "slug": "geval",
+        "icon_name": "check",
+        "category": "LLM Evaluation"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "aae2816e-38c5-4908-a64b-9d764c91bdad",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.452Z",
+        "updated_at": "2026-06-24T17:38:18.452Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Sentence Transformers",
+        "slug": "sentence-transformers",
+        "icon_name": "cpu",
+        "category": "ML/Data"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "c240b4d5-8235-46a7-83d8-662feadb19e5",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.439Z",
+        "updated_at": "2026-06-24T17:38:18.439Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "OpenAI Agents SDK",
+        "slug": "agents-sdk",
+        "icon_name": "brain",
+        "category": "Agentic AI"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "ce3c6948-6d64-4332-afa8-7825d258cc6e",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.449Z",
+        "updated_at": "2026-06-24T17:38:18.449Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "XGBoost",
+        "slug": "xgboost",
+        "icon_name": "cpu",
+        "category": "ML/Data"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "dc5a78ab-02fe-4799-a360-7bd8f2686c31",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.436Z",
+        "updated_at": "2026-06-24T17:38:18.436Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Next.js",
+        "slug": "nextjs",
+        "icon_name": "nextjs",
+        "category": "Frontend"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "e04cd9ec-3092-45f8-94e0-685fa5d94bb1",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.433Z",
+        "updated_at": "2026-06-24T17:38:18.433Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "C",
+        "slug": "c",
+        "icon_name": "c",
+        "category": "Languages"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "e3fd7b21-2701-4d2d-bcfd-98db32f92122",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.437Z",
+        "updated_at": "2026-06-24T17:38:18.437Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LangGraph",
+        "slug": "langgraph",
+        "icon_name": "brain",
+        "category": "Agentic AI"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "f19c35e7-75ac-4447-a9d4-2e47151b81c2",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.438Z",
+        "updated_at": "2026-06-24T17:38:18.438Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LangChain",
+        "slug": "langchain",
+        "icon_name": "brain",
+        "category": "Agentic AI"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "f3f7d911-0eed-4caa-a2d4-556d4b7eddcf",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.455Z",
+        "updated_at": "2026-06-24T17:38:18.455Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Ollama",
+        "slug": "ollama",
+        "icon_name": "cpu",
+        "category": "Tools"
+    }
+},
+{
+    "model": "projects.technology",
+    "pk": "f52ebd66-7541-4fb4-ad4b-48bf482ba3c7",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.447Z",
+        "updated_at": "2026-06-24T17:38:18.447Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Django",
+        "slug": "django",
+        "icon_name": "django",
+        "category": "Backend"
+    }
+},
+{
+    "model": "projects.project",
+    "pk": "63476454-73c4-4fa4-9f0f-cabfeadf71b9",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.474Z",
+        "updated_at": "2026-06-24T17:38:18.474Z",
+        "is_active": true,
+        "is_deleted": false,
+        "title": "Chess Notes",
+        "slug": "chess-notes",
+        "short_description": "An interactive, web-based chess study application allowing users to set up custom positions, analyze moves, write annotated markdown notes, and visualize variations side-by-side.",
+        "full_description": "## Overview\nChess Notes is a specialized web application designed for chess players, coaches, and students to document their chess studies, analyze openings, and annotate complex endgames.\n\n## Key Features\n- **Interactive Chessboards**: Multi-board setup for side-by-side variation analysis.\n- **Move Annotation**: Integrated with Chess.js for valid move validation and PGN annotation.\n- **Markdown Notes**: Rich text editing for move-by-move annotation and positional insights.\n- **Position Export**: Export/import positions via FEN/PGN notations.",
+        "github_url": "https://github.com/GangSagar/Chess-Notes",
+        "live_url": null,
+        "thumbnail_url": null,
+        "featured": true,
+        "display_order": 1,
+        "status": "active",
+        "technologies": [
+            "8990fca0-cead-4905-8db4-9878d7de4b1d",
+            "450c7252-3e2b-4fcc-be78-df917732978b",
+            "dc5a78ab-02fe-4799-a360-7bd8f2686c31"
+        ]
+    }
+},
+{
+    "model": "projects.projectmetric",
+    "pk": "1aed71ab-a071-4bc2-99cd-cb8a21b3e852",
+    "fields": {
+        "project": "63476454-73c4-4fa4-9f0f-cabfeadf71b9",
+        "metric_name": "Move Validation",
+        "metric_value": "Real-time",
+        "created_at": "2026-06-24T17:38:18.478Z"
+    }
+},
+{
+    "model": "projects.projectmetric",
+    "pk": "9dc25169-c58d-4c5b-bd95-4e63ef1c75a6",
+    "fields": {
+        "project": "63476454-73c4-4fa4-9f0f-cabfeadf71b9",
+        "metric_name": "Export Format",
+        "metric_value": "FEN/PGN",
+        "created_at": "2026-06-24T17:38:18.479Z"
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "083bab1e-e4e6-4f73-8121-32e87ca048eb",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.464Z",
+        "updated_at": "2026-06-24T17:38:18.464Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "XGBoost",
+        "category": "ml-data",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 19
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "0864db22-c693-4090-8369-834d7f00748e",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.467Z",
+        "updated_at": "2026-06-24T17:38:18.467Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "WSL",
+        "category": "infrastructure",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 26
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "08d739a9-f797-4796-a533-d98227667a60",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.463Z",
+        "updated_at": "2026-06-24T17:38:18.463Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "REST APIs",
+        "category": "backend",
+        "icon_name": null,
+        "years_of_experience": 3,
+        "display_order": 17
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "27e633ff-ee18-4529-be24-2d8104cf3455",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.464Z",
+        "updated_at": "2026-06-24T17:38:18.464Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Gradio",
+        "category": "backend",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 18
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "2f350b8f-1ca0-4a67-bca0-13b442ca0b24",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.459Z",
+        "updated_at": "2026-06-24T17:38:18.459Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LangChain",
+        "category": "ai-engineering",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 7
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "32e721d0-3bee-4868-810d-d8d99ada23b2",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.458Z",
+        "updated_at": "2026-06-24T17:38:18.458Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LangGraph",
+        "category": "ai-engineering",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 6
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "384e3553-8829-4b10-9757-5f4a2e936b71",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.466Z",
+        "updated_at": "2026-06-24T17:38:18.466Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Git",
+        "category": "infrastructure",
+        "icon_name": null,
+        "years_of_experience": 4,
+        "display_order": 24
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "40e01f2c-71a4-4796-b3e8-77a6f998fa62",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.461Z",
+        "updated_at": "2026-06-24T17:38:18.461Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "RAGAS",
+        "category": "llm-evaluation",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 11
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "4736fbad-d613-4ae0-9030-114a6937f663",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.464Z",
+        "updated_at": "2026-06-24T17:38:18.464Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "LightGBM",
+        "category": "ml-data",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 20
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "66ecc44f-8aa0-4a9e-bee7-c536e05fa4b3",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.463Z",
+        "updated_at": "2026-06-24T17:38:18.463Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Cypher",
+        "category": "knowledge-graphs",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 15
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "7784d0c8-e4a2-489e-bb97-678d11ce8210",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.459Z",
+        "updated_at": "2026-06-24T17:38:18.459Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "OpenAI Agents SDK",
+        "category": "ai-engineering",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 8
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "781c94aa-6ae9-486c-8a87-f976295c6f25",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.462Z",
+        "updated_at": "2026-06-24T17:38:18.462Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Neo4j",
+        "category": "knowledge-graphs",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 14
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "7cbf9f17-06ec-43ee-b2ff-f3d6dd38243b",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.463Z",
+        "updated_at": "2026-06-24T17:38:18.463Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Django",
+        "category": "backend",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 16
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "9908fa43-009b-4274-8c04-472f75dfb7a1",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.466Z",
+        "updated_at": "2026-06-24T17:38:18.466Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Docker",
+        "category": "infrastructure",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 23
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "9b5a7999-bbc1-415a-884c-c5066b58f8e1",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.458Z",
+        "updated_at": "2026-06-24T17:38:18.458Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "SQL",
+        "category": "languages",
+        "icon_name": null,
+        "years_of_experience": 3,
+        "display_order": 4
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "9b6f9c50-1adb-4407-ac97-a92197f204df",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.465Z",
+        "updated_at": "2026-06-24T17:38:18.465Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "FAISS",
+        "category": "ml-data",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 21
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "9d466985-711a-467e-85c9-ffa63b65e469",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.465Z",
+        "updated_at": "2026-06-24T17:38:18.465Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Sentence Transformers",
+        "category": "ml-data",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 22
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "9d9b9f5e-18f6-4251-871a-5c9af7e3e4dc",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.457Z",
+        "updated_at": "2026-06-24T17:38:18.457Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "C",
+        "category": "languages",
+        "icon_name": null,
+        "years_of_experience": 3,
+        "display_order": 3
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "ba3ab9fc-4270-429f-b37a-a22d5ca2ea7f",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.462Z",
+        "updated_at": "2026-06-24T17:38:18.462Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "GEval",
+        "category": "llm-evaluation",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 13
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "c503a6a6-c26e-4436-b100-eb2a2772890c",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.461Z",
+        "updated_at": "2026-06-24T17:38:18.461Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "DeepEval",
+        "category": "llm-evaluation",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 12
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "cb5b10cf-6cb8-44a1-9c54-ccd1902eec4f",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.458Z",
+        "updated_at": "2026-06-24T17:38:18.458Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "JavaScript",
+        "category": "languages",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 5
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "cba5de22-d7eb-45b8-a744-913912854f9c",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.460Z",
+        "updated_at": "2026-06-24T17:38:18.460Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Multi-Agent Systems",
+        "category": "ai-engineering",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 9
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "ccdce861-0043-455b-9750-8892b9e480cd",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.467Z",
+        "updated_at": "2026-06-24T17:38:18.467Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Ollama",
+        "category": "infrastructure",
+        "icon_name": null,
+        "years_of_experience": 1,
+        "display_order": 27
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "e578a0bd-a044-4559-8114-2589d545badd",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.456Z",
+        "updated_at": "2026-06-24T17:38:18.456Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Python",
+        "category": "languages",
+        "icon_name": null,
+        "years_of_experience": 4,
+        "display_order": 1
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "eb106707-ffab-451c-8be8-3e1f20ca964a",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.457Z",
+        "updated_at": "2026-06-24T17:38:18.457Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "C++",
+        "category": "languages",
+        "icon_name": null,
+        "years_of_experience": 3,
+        "display_order": 2
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "fe551925-2929-4e48-83cb-1430e96fedb2",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.460Z",
+        "updated_at": "2026-06-24T17:38:18.460Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "RAG",
+        "category": "ai-engineering",
+        "icon_name": null,
+        "years_of_experience": 2,
+        "display_order": 10
+    }
+},
+{
+    "model": "skills.skill",
+    "pk": "feac3057-e4db-4bd0-8b3a-115ada6c2c94",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.467Z",
+        "updated_at": "2026-06-24T17:38:18.467Z",
+        "is_active": true,
+        "is_deleted": false,
+        "name": "Linux",
+        "category": "infrastructure",
+        "icon_name": null,
+        "years_of_experience": 3,
+        "display_order": 25
+    }
+},
+{
+    "model": "experience.experience",
+    "pk": "22ecb488-c80d-4617-9475-1ff836126b0b",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.469Z",
+        "updated_at": "2026-06-24T17:38:18.469Z",
+        "is_active": true,
+        "is_deleted": false,
+        "company_name": "HP Inc.",
+        "role": "R&D Intern",
+        "employment_type": "Internship",
+        "location": "Bangalore, India",
+        "start_date": "2024-02-01",
+        "end_date": "2024-06-30",
+        "currently_working": false,
+        "description": "Contributed to the Ecosystem Triage Framework using Python, HTML, and CSS. Developed automation workflows and backend components for internal engineering tools.",
+        "display_order": 2,
+        "technologies": [
+            "00f688b2-92c7-41c9-908f-c03b11395b0a",
+            "28fd33cf-2602-4443-ae90-094b1c0e2dcf"
+        ]
+    }
+},
+{
+    "model": "experience.experience",
+    "pk": "6eed3f04-06d4-4bce-9bf8-f2b0cc54589f",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.468Z",
+        "updated_at": "2026-06-24T17:38:18.468Z",
+        "is_active": true,
+        "is_deleted": false,
+        "company_name": "HP Inc.",
+        "role": "Software Engineer",
+        "employment_type": "Full-time",
+        "location": "Bangalore, India",
+        "start_date": "2024-07-01",
+        "end_date": null,
+        "currently_working": true,
+        "description": "Designed and developed LangGraph-based multi-agent systems (Auto-Triage) for automated bug triage and issue routing across printer platforms. Built reusable agent and tool abstractions using AgentSDK, reducing new agent onboarding effort by 50%. Implemented LLM response validation and inference guardrails, improving prediction accuracy by 60%. Engineered structured logging and observability pipelines, improving debugging efficiency by 30%. Developed internal Gradio-based applications for log analysis, root-cause investigation, and automated team assignment. Led FleetAI — a multi-agent workflow for enterprise printer onboarding and fleet management — with multi-layer validation mechanisms for Knowledge Graph ingestion pipelines (Neo4j), improving data consistency and reliability. Developed a reusable evaluation framework integrating RAGAS, DeepEval, and traditional metrics for automated benchmarking and dashboard reporting.",
+        "display_order": 1,
+        "technologies": [
+            "00f688b2-92c7-41c9-908f-c03b11395b0a",
+            "e3fd7b21-2701-4d2d-bcfd-98db32f92122",
+            "c240b4d5-8235-46a7-83d8-662feadb19e5",
+            "4f2ce930-805d-4b51-a73c-12a2fd437312",
+            "6d5e4a3d-46d6-4004-9d66-9424ee33214d",
+            "76da168c-6769-427c-a662-31ea6a041908",
+            "f52ebd66-7541-4fb4-ad4b-48bf482ba3c7",
+            "2d3adb2d-ddb6-4485-a9fe-c19f20773120",
+            "7c625fae-cd21-45b1-91bb-7fab5ad1caf4"
+        ]
+    }
+},
+{
+    "model": "achievements.achievement",
+    "pk": "2372c5d4-26da-45dd-bbe9-7ecffe9be5ab",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.480Z",
+        "updated_at": "2026-06-24T17:38:18.480Z",
+        "is_active": true,
+        "is_deleted": false,
+        "title": "Codeforces Specialist — Max Rating 1418",
+        "description": "Reached Specialist rank on Codeforces with a max rating of 1418 under handle HRN_Harshit, competing in algorithmic programming contests.",
+        "achievement_type": "Competitive Coding",
+        "external_url": "https://codeforces.com/profile/HRN_Harshit",
+        "display_order": 1
+    }
+},
+{
+    "model": "achievements.achievement",
+    "pk": "4661d51b-d0d4-48ad-abf7-3b9dd6ca60bd",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.481Z",
+        "updated_at": "2026-06-24T17:38:18.481Z",
+        "is_active": true,
+        "is_deleted": false,
+        "title": "CodeChef 3-Star Programmer — Max Rating 1666",
+        "description": "Achieved 3-star rating on CodeChef with a peak rating of 1666 under handle hars_02, demonstrating consistent competitive programming performance.",
+        "achievement_type": "Competitive Coding",
+        "external_url": "https://www.codechef.com/users/hars_02",
+        "display_order": 2
+    }
+},
+{
+    "model": "achievements.achievement",
+    "pk": "99ae344a-0b69-4ea3-89fc-e8fb64e63d19",
+    "fields": {
+        "created_at": "2026-06-24T17:38:18.482Z",
+        "updated_at": "2026-06-24T17:38:18.482Z",
+        "is_active": true,
+        "is_deleted": false,
+        "title": "1000+ DSA Problems Solved",
+        "description": "Solved over 1000 Data Structures & Algorithms problems across LeetCode, Codeforces, CodeChef, GeeksforGeeks, and HackerRank.",
+        "achievement_type": "Problem Solving",
+        "external_url": "https://leetcode.com",
+        "display_order": 3
+    }
+}
+]
