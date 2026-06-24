@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # Must be as high as possible
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -80,14 +82,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME', 'ganga_portfolio'),
-        'USER': os.getenv('DATABASE_USER', 'admin'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'password123'),
-        'HOST': os.getenv('DATABASE_HOST', 'localhost'),
-        'PORT': os.getenv('DATABASE_PORT', '5432'),
-    }
+    'default': dj_database_url.config(
+        default=f"postgresql://{os.getenv('DATABASE_USER', 'admin')}:{os.getenv('DATABASE_PASSWORD', 'password123')}@{os.getenv('DATABASE_HOST', 'localhost')}:{os.getenv('DATABASE_PORT', '5432')}/{os.getenv('DATABASE_NAME', 'ganga_portfolio')}"
+    )
 }
 
 
@@ -128,6 +125,16 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+# WhiteNoise storage to compress and cache static files in production
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -138,6 +145,20 @@ CORS_ALLOWED_ORIGINS = [
     origin.strip() for origin in os.getenv('CORS_ALLOWED_ORIGINS', '').split(',') if origin.strip()
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+# Email Settings (Resend SMTP Integration)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.resend.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'resend'
+EMAIL_HOST_PASSWORD = os.getenv('RESEND_API_KEY')
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'onboarding@resend.dev')
+NOTIFY_EMAIL = os.getenv('NOTIFY_EMAIL', DEFAULT_FROM_EMAIL)
+
+# Fallback to printing email to terminal console for local debugging
+if DEBUG and not os.getenv('RESEND_API_KEY'):
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Django REST Framework Settings
 REST_FRAMEWORK = {

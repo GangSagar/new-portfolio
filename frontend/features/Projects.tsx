@@ -255,6 +255,7 @@ export default function Projects({ projects }: ProjectsProps) {
                             onClick={() => handleProjectClick(proj.slug, "github")}
                             className="p-2 rounded-[9px] bg-[#131518]/40 border border-[#343940] text-[#6c7584] hover:text-white hover:border-[#298dff]/25 transition-all duration-300 cursor-pointer shadow-sm"
                             title="Source Code"
+                            aria-label={`View source code for ${proj.title} on GitHub`}
                           >
                             <GithubIcon className="size-4" />
                           </a>
@@ -268,6 +269,7 @@ export default function Projects({ projects }: ProjectsProps) {
                             onClick={() => handleProjectClick(proj.slug, "live_demo")}
                             className="p-2 rounded-[9px] bg-[#131518]/40 border border-[#343940] text-[#298dff] hover:text-[#4da2ff] hover:border-[#4da2ff]/25 transition-all duration-300 cursor-pointer shadow-sm"
                             title="Live Demo"
+                            aria-label={`View live demo of ${proj.title}`}
                           >
                             <ExternalLink className="size-4" />
                           </a>

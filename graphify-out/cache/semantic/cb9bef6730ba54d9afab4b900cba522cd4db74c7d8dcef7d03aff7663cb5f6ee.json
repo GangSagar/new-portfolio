@@ -1,0 +1,93 @@
+{
+    "nodes": [
+        {
+            "id": "7_implementation_plan_milestone_1",
+            "label": "Milestone 1: Project & Database Setup",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "7_implementation_plan_milestone_2",
+            "label": "Milestone 2: Backend API Layer",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "7_implementation_plan_milestone_3",
+            "label": "Milestone 3: Frontend Foundation & Theme",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "7_implementation_plan_milestone_4",
+            "label": "Milestone 4: Core UI Sections",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "7_implementation_plan_milestone_5",
+            "label": "Milestone 5: Integration, Analytics & Alerts",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "7_implementation_plan_milestone_6",
+            "label": "Milestone 6: Verification & Public Launch",
+            "file_type": "concept",
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        }
+    ],
+    "edges": [
+        {
+            "source": "7_implementation_plan_milestone_5",
+            "target": "readme_frontend",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "7_implementation_plan_milestone_5",
+            "target": "readme_backend",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "docs/7_IMPLEMENTATION_PLAN.md",
+            "source_location": null,
+            "weight": 1.0
+        }
+    ],
+    "hyperedges": []
+}

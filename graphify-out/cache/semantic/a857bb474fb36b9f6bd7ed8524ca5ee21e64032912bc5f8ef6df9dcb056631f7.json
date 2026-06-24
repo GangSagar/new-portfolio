@@ -1,0 +1,133 @@
+{
+    "nodes": [
+        {
+            "id": "readme_ganga_portfolio_platform",
+            "label": "Ganga Portfolio Platform",
+            "file_type": "document",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "readme_frontend",
+            "label": "Frontend (Next.js 15)",
+            "file_type": "code",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "readme_backend",
+            "label": "Backend (Django REST Framework)",
+            "file_type": "code",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "readme_postgresql",
+            "label": "PostgreSQL",
+            "file_type": "code",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "readme_posthog",
+            "label": "PostHog",
+            "file_type": "code",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        },
+        {
+            "id": "readme_resend",
+            "label": "Resend",
+            "file_type": "code",
+            "source_file": "README.md",
+            "source_location": null,
+            "source_url": null,
+            "captured_at": null,
+            "author": null,
+            "contributor": null
+        }
+    ],
+    "edges": [
+        {
+            "source": "readme_ganga_portfolio_platform",
+            "target": "readme_frontend",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "readme_ganga_portfolio_platform",
+            "target": "readme_backend",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "readme_backend",
+            "target": "readme_postgresql",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "readme_backend",
+            "target": "readme_posthog",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "readme_backend",
+            "target": "readme_resend",
+            "relation": "references",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        },
+        {
+            "source": "readme_frontend",
+            "target": "readme_backend",
+            "relation": "calls",
+            "confidence": "INFERRED",
+            "confidence_score": 0.9,
+            "source_file": "README.md",
+            "source_location": null,
+            "weight": 1.0
+        }
+    ],
+    "hyperedges": []
+}

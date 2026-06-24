@@ -1,4 +1,5 @@
 import { Project, Experience, Skill, Achievement, Certification, SocialLink } from "@/types";
+import posthog from "posthog-js";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
 
@@ -75,6 +76,11 @@ export async function trackAnalyticsEvent(
   page: string,
   metadata: Record<string, any> = {}
 ): Promise<any> {
+  // Capture client-side in PostHog
+  if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+    posthog.capture(eventName, { page, ...metadata });
+  }
+
   return apiFetch<any>("/analytics/event/", {
     method: "POST",
     body: JSON.stringify({ event_name: eventName, page, metadata }),

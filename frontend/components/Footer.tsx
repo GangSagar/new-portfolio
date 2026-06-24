@@ -73,14 +73,14 @@ export default function Footer({ socialLinks }: FooterProps) {
   };
 
   return (
-    <footer className="relative bg-[#000000] border-t border-[#343940]/30 pt-space-96 pb-space-64 overflow-hidden min-h-[350px] flex flex-col justify-end">
-        {/* Simple static footer background */}
-        <div className="bg-gradient-to-r from-[#0a0d10] to-[#14181f] w-full h-24"></div>
+    <footer className="relative bg-[#0a0d10] border-t border-[#343940]/30 py-12 overflow-hidden">
+      {/* Subtle background glow/gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0d10]/10 to-[#05070a] pointer-events-none" />
 
       {/* Content layout container */}
-      <div className="relative max-w-[1200px] mx-auto px-6 z-10 w-full flex flex-col md:flex-row items-center justify-between gap-space-24">
+      <div className="relative max-w-[1200px] mx-auto px-6 z-10 w-full flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Logo/Copyright */}
-        <div className="text-center md:text-left">
+        <div className="text-center sm:text-left">
           <span className="mono-label text-[#6c7584]">
             © {new Date().getFullYear()} Ganga. All rights reserved.
           </span>
@@ -96,6 +96,7 @@ export default function Footer({ socialLinks }: FooterProps) {
               rel="noopener noreferrer"
               className="p-2.5 rounded-[9px] bg-[#131518]/60 border border-[#343940] text-[#6c7584] hover:text-white hover:border-[#298dff]/25 transition-all duration-300 shadow-sm"
               title={link.platform}
+              aria-label={`Visit my ${link.platform} profile`}
             >
               {getSocialIcon(link.platform)}
             </a>

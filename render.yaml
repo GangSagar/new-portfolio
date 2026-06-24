@@ -1,0 +1,33 @@
+services:
+  # Django Backend Web Service
+  - type: web
+    name: ganga-portfolio-backend
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt && python backend/manage.py collectstatic --noinput && python backend/manage.py migrate
+    startCommand: gunicorn --chdir backend config.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: DEBUG
+        value: "False"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ganga-portfolio-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: CORS_ALLOWED_ORIGINS
+        value: "https://your-frontend-domain.vercel.app" # Update with your Vercel deployment URL
+      - key: RESEND_API_KEY
+        sync: false # Set in Render Dashboard
+      - key: DEFAULT_FROM_EMAIL
+        value: "onboarding@resend.dev"
+      - key: NOTIFY_EMAIL
+        sync: false # Set in Render Dashboard
+
+# Managed PostgreSQL Database
+databases:
+  - name: ganga-portfolio-db
+    plan: free

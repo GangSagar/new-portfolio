@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Space_Mono } from "next/font/google";
 import "./globals.css";
+import { PHProvider } from "./providers";
+import PostHogPageView from "./PostHogPageView";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -37,7 +39,10 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${spaceMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
-        {children}
+        <PHProvider>
+          <PostHogPageView />
+          {children}
+        </PHProvider>
       </body>
     </html>
   );

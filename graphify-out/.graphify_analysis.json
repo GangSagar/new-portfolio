@@ -1,6 +1,7 @@
 {
   "communities": {
     "0": [
+      "app_page",
       "app_page_defaultachievements",
       "app_page_defaultcertifications",
       "app_page_defaultexperiences",
@@ -14,6 +15,9 @@
       "components_footer_githubicon",
       "components_footer_linkedinicon",
       "components_footer_twittericon",
+      "components_navbar",
+      "components_navbar_navbar",
+      "components_navbar_navitems",
       "features_about",
       "features_about_about",
       "features_about_expertises",
@@ -90,18 +94,20 @@
       "achievements_views_certificationviewset",
       "achievements_views_certificationviewset_get_queryset",
       "achievements_views_certificationviewset_init",
-      "core_models",
       "core_models_basemodel",
       "core_models_basemodel_delete",
-      "core_models_basemodelmanager",
-      "core_models_basemodelmanager_get_queryset",
-      "core_models_basemodelqueryset",
-      "core_models_basemodelqueryset_delete",
-      "core_models_meta",
-      "core_models_siteconfiguration",
-      "core_models_siteconfiguration_str",
-      "core_models_sociallink",
-      "core_models_sociallink_str",
+      "experience_models",
+      "experience_models_experience",
+      "experience_models_experience_str",
+      "experience_models_meta",
+      "projects_models",
+      "projects_models_meta",
+      "projects_models_project",
+      "projects_models_project_str",
+      "projects_models_projectmetric",
+      "projects_models_projectmetric_str",
+      "projects_models_technology",
+      "projects_models_technology_str",
       "skills_models",
       "skills_models_meta",
       "skills_models_skill",
@@ -344,18 +350,22 @@
       "skills_views_skillviewset_init"
     ],
     "14": [
-      "projects_models",
-      "projects_models_meta",
-      "projects_models_project",
-      "projects_models_project_str",
-      "projects_models_projectmetric",
-      "projects_models_projectmetric_str",
-      "projects_models_technology",
-      "projects_models_technology_str"
+      "core_models",
+      "core_models_basemodelmanager",
+      "core_models_basemodelmanager_get_queryset",
+      "core_models_basemodelqueryset",
+      "core_models_basemodelqueryset_delete",
+      "core_models_meta",
+      "core_models_siteconfiguration",
+      "core_models_siteconfiguration_str",
+      "core_models_sociallink",
+      "core_models_sociallink_str"
     ],
     "15": [
       "implementation_plan_milestone_5",
+      "readme_backend",
       "readme_django_rest_framework",
+      "readme_frontend",
       "readme_ganga_portfolio_platform",
       "readme_nextjs",
       "readme_postgresql",
@@ -419,188 +429,180 @@
       "core_serializers_sociallinkserializer"
     ],
     "24": [
-      "experience_models",
-      "experience_models_experience",
-      "experience_models_experience_str",
-      "experience_models_meta"
-    ],
-    "25": [
       "backend_manage",
       "backend_manage_main",
       "backend_manage_rationale_8"
     ],
-    "26": [
-      "components_navbar",
-      "components_navbar_navbar",
-      "components_navbar_navitems"
-    ],
-    "27": [
+    "25": [
       "config_asgi",
       "config_asgi_rationale_1",
       "config_wsgi"
     ],
-    "28": [
+    "26": [
       "config_urls",
       "config_urls_health_check",
       "config_urls_rationale_1"
     ],
-    "29": [
+    "27": [
       "experience_serializers",
       "experience_serializers_experienceserializer",
       "experience_serializers_meta"
     ],
-    "30": [
+    "28": [
       "skills_serializers",
       "skills_serializers_meta",
       "skills_serializers_skillserializer"
     ],
-    "31": [
+    "29": [
       "sui_design_primary_blue",
       "sui_design_system",
       "sui_design_twk_everett"
     ],
-    "32": [
+    "30": [
       "app_page_home",
       "frontend_frontend_app_page_tsx_app_page"
     ],
-    "33": [
+    "31": [
       "backend_apps_achievements_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_achievements_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "34": [
+    "32": [
       "backend_apps_analytics_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_analytics_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "35": [
+    "33": [
       "backend_apps_contact_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_contact_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "36": [
+    "34": [
       "backend_apps_core_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_core_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "37": [
+    "35": [
       "backend_apps_experience_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_experience_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "38": [
+    "36": [
       "backend_apps_projects_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_projects_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "39": [
+    "37": [
       "backend_apps_skills_migrations_0001_initial_py_migrations_0001_initial",
       "backend_apps_skills_migrations_0001_initial_py_migrations_0001_initial_migration"
     ],
-    "40": [
+    "38": [
       "frontend_eslint_config_mjs_frontend_eslint_config",
       "frontend_eslint_config_mjs_frontend_eslint_config_eslintconfig"
     ],
-    "41": [
+    "39": [
       "frontend_frontend_eslint_config_mjs_frontend_eslint_config",
       "frontend_frontend_eslint_config_mjs_frontend_eslint_config_eslintconfig"
     ],
-    "42": [
+    "40": [
       "frontend_frontend_next_config_ts_frontend_next_config",
       "frontend_frontend_next_config_ts_frontend_next_config_nextconfig"
     ],
-    "43": [
+    "41": [
       "frontend_frontend_postcss_config_mjs_frontend_postcss_config",
       "frontend_frontend_postcss_config_mjs_frontend_postcss_config_config"
     ],
-    "44": [
+    "42": [
       "frontend_next_config_ts_frontend_next_config",
       "frontend_next_config_ts_frontend_next_config_nextconfig"
     ],
-    "45": [
+    "43": [
       "frontend_postcss_config_mjs_frontend_postcss_config",
       "frontend_postcss_config_mjs_frontend_postcss_config_config"
     ],
-    "46": [
+    "44": [
       "implementation_plan_milestone_1",
       "todo_tracker_overall_progress"
     ],
-    "47": [
+    "45": [
       "implementation_plan_milestone_2",
       "requirements_drf_spectacular"
     ],
-    "48": [
+    "46": [
       "requirements_django",
       "requirements_djangorestframework"
     ],
-    "49": [
+    "47": [
       "scripts_seed",
       "scripts_seed_seed_data"
     ],
-    "50": [
+    "48": [
       "achievements_init"
     ],
-    "51": [
+    "49": [
       "analytics_init"
     ],
-    "52": [
+    "50": [
       "apps_init"
     ],
-    "53": [
+    "51": [
       "backend_apps_achievements_migrations_init_py_migrations_init"
     ],
-    "54": [
+    "52": [
       "backend_apps_analytics_migrations_init_py_migrations_init"
     ],
-    "55": [
+    "53": [
       "backend_apps_contact_migrations_init_py_migrations_init"
     ],
-    "56": [
+    "54": [
       "backend_apps_core_migrations_init_py_migrations_init"
     ],
-    "57": [
+    "55": [
       "backend_apps_experience_migrations_init_py_migrations_init"
     ],
-    "58": [
+    "56": [
       "backend_apps_projects_migrations_init_py_migrations_init"
     ],
-    "59": [
+    "57": [
       "backend_apps_skills_migrations_init_py_migrations_init"
     ],
-    "60": [
+    "58": [
       "config_init"
     ],
-    "61": [
+    "59": [
       "config_settings"
     ],
-    "62": [
+    "60": [
       "contact_init"
     ],
-    "63": [
+    "61": [
       "core_init"
     ],
-    "64": [
+    "62": [
       "experience_init"
     ],
-    "65": [
+    "63": [
+      "frontend_agents_rules"
+    ],
+    "64": [
       "frontend_frontend_next_env_d_ts_frontend_next_env_d"
     ],
-    "66": [
+    "65": [
       "frontend_next_env_d_ts_frontend_next_env_d"
     ],
-    "67": [
+    "66": [
       "implementation_plan_milestone_3"
     ],
-    "68": [
+    "67": [
       "implementation_plan_milestone_4"
     ],
-    "69": [
+    "68": [
       "implementation_plan_milestone_6"
     ],
-    "70": [
+    "69": [
       "projects_init"
     ],
-    "71": [
+    "70": [
       "skills_init"
     ]
   },
   "cohesion": {
-    "0": 0.06715063520871144,
-    "1": 0.07171717171717172,
+    "0": 0.07667900581702802,
+    "1": 0.06567992599444958,
     "2": 0.08333333333333333,
     "3": 0.09090909090909091,
     "4": 0.12857142857142856,
@@ -613,8 +615,8 @@
     "11": 0.16666666666666666,
     "12": 0.18181818181818182,
     "13": 0.18181818181818182,
-    "14": 0.25,
-    "15": 0.3333333333333333,
+    "14": 0.2222222222222222,
+    "15": 0.4166666666666667,
     "16": 0.3333333333333333,
     "17": 0.3333333333333333,
     "18": 0.3333333333333333,
@@ -623,14 +625,14 @@
     "21": 0.5,
     "22": 0.5,
     "23": 0.5,
-    "24": 0.5,
+    "24": 0.6666666666666666,
     "25": 0.6666666666666666,
     "26": 0.6666666666666666,
     "27": 0.6666666666666666,
     "28": 0.6666666666666666,
     "29": 0.6666666666666666,
-    "30": 0.6666666666666666,
-    "31": 0.6666666666666666,
+    "30": 1.0,
+    "31": 1.0,
     "32": 1.0,
     "33": 1.0,
     "34": 1.0,
@@ -669,8 +671,7 @@
     "67": 1.0,
     "68": 1.0,
     "69": 1.0,
-    "70": 1.0,
-    "71": 1.0
+    "70": 1.0
   },
   "gods": [
     {
@@ -782,7 +783,7 @@
     }
   ],
   "tokens": {
-    "input": 17344,
-    "output": 2088
+    "input": 11034,
+    "output": 2165
   }
 }
