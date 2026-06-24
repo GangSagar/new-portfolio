@@ -1,0 +1,788 @@
+{
+  "communities": {
+    "0": [
+      "app_page_defaultachievements",
+      "app_page_defaultcertifications",
+      "app_page_defaultexperiences",
+      "app_page_defaultprojects",
+      "app_page_defaultskills",
+      "app_page_defaultsociallinks",
+      "app_page_homepage",
+      "components_footer",
+      "components_footer_footer",
+      "components_footer_footerprops",
+      "components_footer_githubicon",
+      "components_footer_linkedinicon",
+      "components_footer_twittericon",
+      "features_about",
+      "features_about_about",
+      "features_about_expertises",
+      "features_achievements",
+      "features_achievements_achievements",
+      "features_achievements_achievementsprops",
+      "features_contact",
+      "features_contact_contact",
+      "features_experience",
+      "features_experience_experienceprops",
+      "features_experience_experiencesection",
+      "features_hero",
+      "features_hero_hero",
+      "features_projects",
+      "features_projects_githubicon",
+      "features_projects_projects",
+      "features_projects_projectsprops",
+      "features_resume",
+      "features_resume_resume",
+      "features_skills",
+      "features_skills_categorylabels",
+      "features_skills_skills",
+      "features_skills_skillsprops",
+      "frontend_app_page_tsx_app_page",
+      "services_api",
+      "services_api_apifetch",
+      "services_api_fetchachievements",
+      "services_api_fetchcertifications",
+      "services_api_fetchexperiences",
+      "services_api_fetchprojectbyslug",
+      "services_api_fetchprojects",
+      "services_api_fetchskills",
+      "services_api_fetchsociallinks",
+      "services_api_submitcontactmessage",
+      "services_api_trackanalyticsevent",
+      "services_api_trackresumedownload",
+      "types_index",
+      "types_index_achievement",
+      "types_index_certification",
+      "types_index_experience",
+      "types_index_project",
+      "types_index_projectmetric",
+      "types_index_skill",
+      "types_index_sociallink",
+      "types_index_technology"
+    ],
+    "1": [
+      "achievements_models",
+      "achievements_models_achievement",
+      "achievements_models_achievement_str",
+      "achievements_models_certification",
+      "achievements_models_certification_str",
+      "achievements_models_meta",
+      "achievements_repositories",
+      "achievements_repositories_achievementrepository",
+      "achievements_repositories_achievementrepository_get_all_active",
+      "achievements_repositories_certificationrepository",
+      "achievements_repositories_certificationrepository_get_all_active",
+      "achievements_serializers",
+      "achievements_serializers_achievementserializer",
+      "achievements_serializers_certificationserializer",
+      "achievements_serializers_meta",
+      "achievements_services",
+      "achievements_services_achievementservice",
+      "achievements_services_achievementservice_get_achievements",
+      "achievements_services_achievementservice_init",
+      "achievements_services_certificationservice",
+      "achievements_services_certificationservice_get_certifications",
+      "achievements_services_certificationservice_init",
+      "achievements_views",
+      "achievements_views_achievementviewset",
+      "achievements_views_achievementviewset_get_queryset",
+      "achievements_views_achievementviewset_init",
+      "achievements_views_certificationviewset",
+      "achievements_views_certificationviewset_get_queryset",
+      "achievements_views_certificationviewset_init",
+      "core_models",
+      "core_models_basemodel",
+      "core_models_basemodel_delete",
+      "core_models_basemodelmanager",
+      "core_models_basemodelmanager_get_queryset",
+      "core_models_basemodelqueryset",
+      "core_models_basemodelqueryset_delete",
+      "core_models_meta",
+      "core_models_siteconfiguration",
+      "core_models_siteconfiguration_str",
+      "core_models_sociallink",
+      "core_models_sociallink_str",
+      "skills_models",
+      "skills_models_meta",
+      "skills_models_skill",
+      "skills_models_skill_str"
+    ],
+    "2": [
+      "frontend_package_dependencies_framer_motion",
+      "frontend_package_dependencies_lucide_react",
+      "frontend_package_json_frontend_package",
+      "frontend_package_json_frontend_package_dependencies",
+      "frontend_package_json_frontend_package_dependencies_next",
+      "frontend_package_json_frontend_package_dependencies_react",
+      "frontend_package_json_frontend_package_dependencies_react_dom",
+      "frontend_package_json_frontend_package_devdependencies",
+      "frontend_package_json_frontend_package_devdependencies_eslint",
+      "frontend_package_json_frontend_package_devdependencies_eslint_config_next",
+      "frontend_package_json_frontend_package_devdependencies_tailwindcss",
+      "frontend_package_json_frontend_package_devdependencies_tailwindcss_postcss",
+      "frontend_package_json_frontend_package_devdependencies_types_node",
+      "frontend_package_json_frontend_package_devdependencies_types_react",
+      "frontend_package_json_frontend_package_devdependencies_types_react_dom",
+      "frontend_package_json_frontend_package_devdependencies_typescript",
+      "frontend_package_json_frontend_package_name",
+      "frontend_package_json_frontend_package_private",
+      "frontend_package_json_frontend_package_scripts",
+      "frontend_package_json_frontend_package_scripts_build",
+      "frontend_package_json_frontend_package_scripts_dev",
+      "frontend_package_json_frontend_package_scripts_lint",
+      "frontend_package_json_frontend_package_scripts_start",
+      "frontend_package_json_frontend_package_version"
+    ],
+    "3": [
+      "frontend_frontend_package_json_frontend_package",
+      "frontend_frontend_package_json_frontend_package_dependencies",
+      "frontend_frontend_package_json_frontend_package_dependencies_next",
+      "frontend_frontend_package_json_frontend_package_dependencies_react",
+      "frontend_frontend_package_json_frontend_package_dependencies_react_dom",
+      "frontend_frontend_package_json_frontend_package_devdependencies",
+      "frontend_frontend_package_json_frontend_package_devdependencies_eslint",
+      "frontend_frontend_package_json_frontend_package_devdependencies_eslint_config_next",
+      "frontend_frontend_package_json_frontend_package_devdependencies_tailwindcss",
+      "frontend_frontend_package_json_frontend_package_devdependencies_tailwindcss_postcss",
+      "frontend_frontend_package_json_frontend_package_devdependencies_types_node",
+      "frontend_frontend_package_json_frontend_package_devdependencies_types_react",
+      "frontend_frontend_package_json_frontend_package_devdependencies_types_react_dom",
+      "frontend_frontend_package_json_frontend_package_devdependencies_typescript",
+      "frontend_frontend_package_json_frontend_package_name",
+      "frontend_frontend_package_json_frontend_package_private",
+      "frontend_frontend_package_json_frontend_package_scripts",
+      "frontend_frontend_package_json_frontend_package_scripts_build",
+      "frontend_frontend_package_json_frontend_package_scripts_dev",
+      "frontend_frontend_package_json_frontend_package_scripts_lint",
+      "frontend_frontend_package_json_frontend_package_scripts_start",
+      "frontend_frontend_package_json_frontend_package_version"
+    ],
+    "4": [
+      "contact_repositories",
+      "contact_repositories_contactrepository",
+      "contact_repositories_contactrepository_create_message",
+      "contact_repositories_resumedownloadrepository",
+      "contact_repositories_resumedownloadrepository_create_download",
+      "contact_services",
+      "contact_services_contactservice",
+      "contact_services_contactservice_init",
+      "contact_services_contactservice_submit_message",
+      "contact_services_hash_ip",
+      "contact_services_resumedownloadservice",
+      "contact_services_resumedownloadservice_init",
+      "contact_services_resumedownloadservice_track_download",
+      "contact_views",
+      "contact_views_contactmessageviewset",
+      "contact_views_contactmessageviewset_create",
+      "contact_views_contactmessageviewset_init",
+      "contact_views_get_client_ip",
+      "contact_views_resumedownloadviewset",
+      "contact_views_resumedownloadviewset_create",
+      "contact_views_resumedownloadviewset_init"
+    ],
+    "5": [
+      "projects_repositories",
+      "projects_repositories_projectrepository",
+      "projects_repositories_projectrepository_get_all_active",
+      "projects_repositories_projectrepository_get_by_slug",
+      "projects_repositories_technologyrepository",
+      "projects_repositories_technologyrepository_get_all_active",
+      "projects_services",
+      "projects_services_projectservice",
+      "projects_services_projectservice_get_project_by_slug",
+      "projects_services_projectservice_get_projects",
+      "projects_services_projectservice_init",
+      "projects_services_technologyservice",
+      "projects_services_technologyservice_get_active_technologies",
+      "projects_services_technologyservice_init",
+      "projects_views",
+      "projects_views_projectviewset",
+      "projects_views_projectviewset_get_queryset",
+      "projects_views_projectviewset_init",
+      "projects_views_technologyviewset",
+      "projects_views_technologyviewset_get_queryset",
+      "projects_views_technologyviewset_init"
+    ],
+    "6": [
+      "frontend_frontend_tsconfig_json_frontend_tsconfig",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_allowjs",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_esmoduleinterop",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_incremental",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_isolatedmodules",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_jsx",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_lib",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_module",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_moduleresolution",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_noemit",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_paths",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_plugins",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_resolvejsonmodule",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_skiplibcheck",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_strict",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions_target",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_exclude",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_include",
+      "frontend_frontend_tsconfig_json_frontend_tsconfig_paths"
+    ],
+    "7": [
+      "frontend_tsconfig_json_frontend_tsconfig",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_allowjs",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_esmoduleinterop",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_incremental",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_isolatedmodules",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_jsx",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_lib",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_module",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_moduleresolution",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_noemit",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_paths",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_plugins",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_resolvejsonmodule",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_skiplibcheck",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_strict",
+      "frontend_tsconfig_json_frontend_tsconfig_compileroptions_target",
+      "frontend_tsconfig_json_frontend_tsconfig_exclude",
+      "frontend_tsconfig_json_frontend_tsconfig_include",
+      "frontend_tsconfig_json_frontend_tsconfig_paths"
+    ],
+    "8": [
+      "core_repositories",
+      "core_repositories_siteconfigurationrepository",
+      "core_repositories_siteconfigurationrepository_get_all_active",
+      "core_repositories_siteconfigurationrepository_get_value_by_key",
+      "core_repositories_sociallinkrepository",
+      "core_repositories_sociallinkrepository_get_all_active",
+      "core_repositories_sociallinkrepository_get_by_id",
+      "core_services",
+      "core_services_siteconfigurationservice",
+      "core_services_siteconfigurationservice_get_active_configurations",
+      "core_services_siteconfigurationservice_get_config_value",
+      "core_services_siteconfigurationservice_init",
+      "core_services_sociallinkservice",
+      "core_services_sociallinkservice_get_active_social_links",
+      "core_services_sociallinkservice_init",
+      "core_views",
+      "core_views_sociallinkviewset",
+      "core_views_sociallinkviewset_get_queryset",
+      "core_views_sociallinkviewset_init"
+    ],
+    "9": [
+      "1_prd_prd",
+      "3_app_flow_app_flow",
+      "4_design_design_system",
+      "5_schema_database_schema",
+      "6_api_contract_api_contract",
+      "7_implementation_plan_implementation_plan",
+      "8_todo_tracker_todo_tracker",
+      "9_ai_rules_ai_rules",
+      "ai_rules_md",
+      "api_contract_md",
+      "app_flow_md",
+      "design_md",
+      "implementation_plan_md",
+      "prd_md",
+      "schema_md",
+      "todo_tracker_md",
+      "trd_v2_md"
+    ],
+    "10": [
+      "analytics_repositories",
+      "analytics_repositories_analyticseventrepository",
+      "analytics_repositories_analyticseventrepository_create_event",
+      "analytics_serializers",
+      "analytics_serializers_analyticseventserializer",
+      "analytics_serializers_meta",
+      "analytics_services",
+      "analytics_services_analyticseventservice",
+      "analytics_services_analyticseventservice_init",
+      "analytics_services_analyticseventservice_log_event",
+      "analytics_views",
+      "analytics_views_analyticseventviewset",
+      "analytics_views_analyticseventviewset_create",
+      "analytics_views_analyticseventviewset_init"
+    ],
+    "11": [
+      "apitestcase",
+      "projects_tests",
+      "projects_tests_portfolioapitests",
+      "projects_tests_portfolioapitests_setup",
+      "projects_tests_portfolioapitests_test_get_experience",
+      "projects_tests_portfolioapitests_test_get_project_by_slug",
+      "projects_tests_portfolioapitests_test_get_projects",
+      "projects_tests_portfolioapitests_test_get_skills",
+      "projects_tests_portfolioapitests_test_health_check",
+      "projects_tests_portfolioapitests_test_log_analytics_event",
+      "projects_tests_portfolioapitests_test_submit_contact_message",
+      "projects_tests_portfolioapitests_test_submit_contact_message_validation_fail"
+    ],
+    "12": [
+      "experience_repositories",
+      "experience_repositories_experiencerepository",
+      "experience_repositories_experiencerepository_get_all_active",
+      "experience_services",
+      "experience_services_experienceservice",
+      "experience_services_experienceservice_get_experiences",
+      "experience_services_experienceservice_init",
+      "experience_views",
+      "experience_views_experienceviewset",
+      "experience_views_experienceviewset_get_queryset",
+      "experience_views_experienceviewset_init"
+    ],
+    "13": [
+      "skills_repositories",
+      "skills_repositories_skillrepository",
+      "skills_repositories_skillrepository_get_all_active",
+      "skills_services",
+      "skills_services_skillservice",
+      "skills_services_skillservice_get_skills",
+      "skills_services_skillservice_init",
+      "skills_views",
+      "skills_views_skillviewset",
+      "skills_views_skillviewset_get_queryset",
+      "skills_views_skillviewset_init"
+    ],
+    "14": [
+      "projects_models",
+      "projects_models_meta",
+      "projects_models_project",
+      "projects_models_project_str",
+      "projects_models_projectmetric",
+      "projects_models_projectmetric_str",
+      "projects_models_technology",
+      "projects_models_technology_str"
+    ],
+    "15": [
+      "implementation_plan_milestone_5",
+      "readme_django_rest_framework",
+      "readme_ganga_portfolio_platform",
+      "readme_nextjs",
+      "readme_postgresql",
+      "readme_posthog",
+      "readme_resend"
+    ],
+    "16": [
+      "app_layout_inter",
+      "app_layout_spacegrotesk",
+      "app_layout_spacemono",
+      "frontend_app_layout_tsx_app_layout",
+      "frontend_app_layout_tsx_app_layout_metadata",
+      "frontend_app_layout_tsx_app_layout_rootlayout"
+    ],
+    "17": [
+      "contact_models",
+      "contact_models_contactmessage",
+      "contact_models_contactmessage_str",
+      "contact_models_meta",
+      "contact_models_resumedownload",
+      "contact_models_resumedownload_str"
+    ],
+    "18": [
+      "contact_serializers",
+      "contact_serializers_contactmessageserializer",
+      "contact_serializers_contactmessageserializer_validate_message",
+      "contact_serializers_contactmessageserializer_validate_name",
+      "contact_serializers_meta",
+      "contact_serializers_resumedownloadserializer"
+    ],
+    "19": [
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "frontend_frontend_app_layout_tsx_app_layout",
+      "frontend_frontend_app_layout_tsx_app_layout_metadata",
+      "frontend_frontend_app_layout_tsx_app_layout_rootlayout"
+    ],
+    "20": [
+      "projects_serializers",
+      "projects_serializers_meta",
+      "projects_serializers_projectmetricserializer",
+      "projects_serializers_projectserializer",
+      "projects_serializers_technologyserializer"
+    ],
+    "21": [
+      "analytics_models",
+      "analytics_models_analyticsevent",
+      "analytics_models_analyticsevent_str",
+      "analytics_models_meta"
+    ],
+    "22": [
+      "core_renderers",
+      "core_renderers_envelopejsonrenderer",
+      "core_renderers_envelopejsonrenderer_render",
+      "jsonrenderer"
+    ],
+    "23": [
+      "core_serializers",
+      "core_serializers_meta",
+      "core_serializers_siteconfigurationserializer",
+      "core_serializers_sociallinkserializer"
+    ],
+    "24": [
+      "experience_models",
+      "experience_models_experience",
+      "experience_models_experience_str",
+      "experience_models_meta"
+    ],
+    "25": [
+      "backend_manage",
+      "backend_manage_main",
+      "backend_manage_rationale_8"
+    ],
+    "26": [
+      "components_navbar",
+      "components_navbar_navbar",
+      "components_navbar_navitems"
+    ],
+    "27": [
+      "config_asgi",
+      "config_asgi_rationale_1",
+      "config_wsgi"
+    ],
+    "28": [
+      "config_urls",
+      "config_urls_health_check",
+      "config_urls_rationale_1"
+    ],
+    "29": [
+      "experience_serializers",
+      "experience_serializers_experienceserializer",
+      "experience_serializers_meta"
+    ],
+    "30": [
+      "skills_serializers",
+      "skills_serializers_meta",
+      "skills_serializers_skillserializer"
+    ],
+    "31": [
+      "sui_design_primary_blue",
+      "sui_design_system",
+      "sui_design_twk_everett"
+    ],
+    "32": [
+      "app_page_home",
+      "frontend_frontend_app_page_tsx_app_page"
+    ],
+    "33": [
+      "backend_apps_achievements_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_achievements_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "34": [
+      "backend_apps_analytics_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_analytics_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "35": [
+      "backend_apps_contact_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_contact_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "36": [
+      "backend_apps_core_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_core_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "37": [
+      "backend_apps_experience_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_experience_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "38": [
+      "backend_apps_projects_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_projects_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "39": [
+      "backend_apps_skills_migrations_0001_initial_py_migrations_0001_initial",
+      "backend_apps_skills_migrations_0001_initial_py_migrations_0001_initial_migration"
+    ],
+    "40": [
+      "frontend_eslint_config_mjs_frontend_eslint_config",
+      "frontend_eslint_config_mjs_frontend_eslint_config_eslintconfig"
+    ],
+    "41": [
+      "frontend_frontend_eslint_config_mjs_frontend_eslint_config",
+      "frontend_frontend_eslint_config_mjs_frontend_eslint_config_eslintconfig"
+    ],
+    "42": [
+      "frontend_frontend_next_config_ts_frontend_next_config",
+      "frontend_frontend_next_config_ts_frontend_next_config_nextconfig"
+    ],
+    "43": [
+      "frontend_frontend_postcss_config_mjs_frontend_postcss_config",
+      "frontend_frontend_postcss_config_mjs_frontend_postcss_config_config"
+    ],
+    "44": [
+      "frontend_next_config_ts_frontend_next_config",
+      "frontend_next_config_ts_frontend_next_config_nextconfig"
+    ],
+    "45": [
+      "frontend_postcss_config_mjs_frontend_postcss_config",
+      "frontend_postcss_config_mjs_frontend_postcss_config_config"
+    ],
+    "46": [
+      "implementation_plan_milestone_1",
+      "todo_tracker_overall_progress"
+    ],
+    "47": [
+      "implementation_plan_milestone_2",
+      "requirements_drf_spectacular"
+    ],
+    "48": [
+      "requirements_django",
+      "requirements_djangorestframework"
+    ],
+    "49": [
+      "scripts_seed",
+      "scripts_seed_seed_data"
+    ],
+    "50": [
+      "achievements_init"
+    ],
+    "51": [
+      "analytics_init"
+    ],
+    "52": [
+      "apps_init"
+    ],
+    "53": [
+      "backend_apps_achievements_migrations_init_py_migrations_init"
+    ],
+    "54": [
+      "backend_apps_analytics_migrations_init_py_migrations_init"
+    ],
+    "55": [
+      "backend_apps_contact_migrations_init_py_migrations_init"
+    ],
+    "56": [
+      "backend_apps_core_migrations_init_py_migrations_init"
+    ],
+    "57": [
+      "backend_apps_experience_migrations_init_py_migrations_init"
+    ],
+    "58": [
+      "backend_apps_projects_migrations_init_py_migrations_init"
+    ],
+    "59": [
+      "backend_apps_skills_migrations_init_py_migrations_init"
+    ],
+    "60": [
+      "config_init"
+    ],
+    "61": [
+      "config_settings"
+    ],
+    "62": [
+      "contact_init"
+    ],
+    "63": [
+      "core_init"
+    ],
+    "64": [
+      "experience_init"
+    ],
+    "65": [
+      "frontend_frontend_next_env_d_ts_frontend_next_env_d"
+    ],
+    "66": [
+      "frontend_next_env_d_ts_frontend_next_env_d"
+    ],
+    "67": [
+      "implementation_plan_milestone_3"
+    ],
+    "68": [
+      "implementation_plan_milestone_4"
+    ],
+    "69": [
+      "implementation_plan_milestone_6"
+    ],
+    "70": [
+      "projects_init"
+    ],
+    "71": [
+      "skills_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06715063520871144,
+    "1": 0.07171717171717172,
+    "2": 0.08333333333333333,
+    "3": 0.09090909090909091,
+    "4": 0.12857142857142856,
+    "5": 0.10952380952380952,
+    "6": 0.1,
+    "7": 0.1,
+    "8": 0.1111111111111111,
+    "9": 0.13970588235294118,
+    "10": 0.14285714285714285,
+    "11": 0.16666666666666666,
+    "12": 0.18181818181818182,
+    "13": 0.18181818181818182,
+    "14": 0.25,
+    "15": 0.3333333333333333,
+    "16": 0.3333333333333333,
+    "17": 0.3333333333333333,
+    "18": 0.3333333333333333,
+    "19": 0.4,
+    "20": 0.4,
+    "21": 0.5,
+    "22": 0.5,
+    "23": 0.5,
+    "24": 0.5,
+    "25": 0.6666666666666666,
+    "26": 0.6666666666666666,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0
+  },
+  "gods": [
+    {
+      "id": "frontend_frontend_tsconfig_json_frontend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "frontend_tsconfig_json_frontend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "projects_tests_portfolioapitests",
+      "label": "PortfolioAPITests",
+      "degree": 11
+    },
+    {
+      "id": "services_api_apifetch",
+      "label": "apiFetch()",
+      "degree": 11
+    },
+    {
+      "id": "trd_v2_md",
+      "label": "Technical Requirements Document v2.0",
+      "degree": 10
+    },
+    {
+      "id": "core_models_basemodel",
+      "label": "BaseModel",
+      "degree": 10
+    },
+    {
+      "id": "achievements_models_achievement",
+      "label": "Achievement",
+      "degree": 8
+    },
+    {
+      "id": "achievements_models_certification",
+      "label": "Certification",
+      "degree": 8
+    },
+    {
+      "id": "achievements_services_achievementservice",
+      "label": "AchievementService",
+      "degree": 8
+    },
+    {
+      "id": "achievements_services_certificationservice",
+      "label": "CertificationService",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AI Rules",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/AI_RULES.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `AI Rules` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "Application Flow Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/3_APP_FLOW.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `Application Flow Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "Database Schema Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/5_SCHEMA.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `Database Schema Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "API Contract Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/6_API_CONTRACT.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `API Contract Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "AI Development Rules",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/9_AI_RULES.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `AI Development Rules` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    }
+  ],
+  "tokens": {
+    "input": 17344,
+    "output": 2088
+  }
+}

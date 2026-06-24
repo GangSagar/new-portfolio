@@ -1,0 +1,145 @@
+{
+  "communities": {
+    "0": [
+      "5_schema_database_schema",
+      "6_api_contract_api_contract",
+      "9_ai_rules_ai_rules",
+      "ai_rules_md",
+      "api_contract_md",
+      "schema_md",
+      "trd_v2_md"
+    ],
+    "1": [
+      "1_prd_prd",
+      "3_app_flow_app_flow",
+      "4_design_design_system",
+      "7_implementation_plan_implementation_plan",
+      "8_todo_tracker_todo_tracker"
+    ],
+    "2": [
+      "app_flow_md",
+      "design_md",
+      "implementation_plan_md",
+      "prd_md",
+      "todo_tracker_md"
+    ]
+  },
+  "cohesion": {
+    "0": 0.3333333333333333,
+    "1": 0.4,
+    "2": 0.4
+  },
+  "gods": [
+    {
+      "id": "trd_v2_md",
+      "label": "Technical Requirements Document v2.0",
+      "degree": 10
+    },
+    {
+      "id": "prd_md",
+      "label": "Product Requirements Document",
+      "degree": 4
+    },
+    {
+      "id": "1_prd_prd",
+      "label": "Product Requirements Document (PRD)",
+      "degree": 4
+    },
+    {
+      "id": "7_implementation_plan_implementation_plan",
+      "label": "Implementation Plan",
+      "degree": 3
+    },
+    {
+      "id": "implementation_plan_md",
+      "label": "Implementation Plan",
+      "degree": 2
+    },
+    {
+      "id": "3_app_flow_app_flow",
+      "label": "Application Flow Document",
+      "degree": 2
+    },
+    {
+      "id": "5_schema_database_schema",
+      "label": "Database Schema Document",
+      "degree": 2
+    },
+    {
+      "id": "6_api_contract_api_contract",
+      "label": "API Contract Document",
+      "degree": 2
+    },
+    {
+      "id": "ai_rules_md",
+      "label": "AI Rules",
+      "degree": 1
+    },
+    {
+      "id": "api_contract_md",
+      "label": "API Contract",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Application Flow Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/3_APP_FLOW.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `Application Flow Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "AI Rules",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/AI_RULES.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `AI Rules` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "Technical Requirements Document v2.0",
+      "target": "Product Requirements Document",
+      "source_files": [
+        "docs/TRD_v2.md",
+        "docs/PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "Database Schema Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/5_SCHEMA.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `Database Schema Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    },
+    {
+      "source": "API Contract Document",
+      "target": "Technical Requirements Document v2.0",
+      "source_files": [
+        "docs/6_API_CONTRACT.md",
+        "docs/TRD_v2.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `API Contract Document` unexpectedly reaches hub `Technical Requirements Document v2.0`"
+    }
+  ],
+  "tokens": {
+    "input": 23962,
+    "output": 2080
+  }
+}

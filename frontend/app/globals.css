@@ -1,0 +1,380 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --font-mono: var(--font-mono);
+
+  --color-primary: #298dff;
+  --color-primary-foreground: #ffffff;
+  
+  --color-border: #343940;
+  --color-input: #4b515b;
+  --color-ring: #298dff;
+
+  /* Custom Spacing Tokens */
+  --spacing-space-2: 0.125em;
+  --spacing-space-4: 0.25em;
+  --spacing-space-6: 0.375em;
+  --spacing-space-8: 0.5em;
+  --spacing-space-10: 0.625em;
+  --spacing-space-12: 0.75em;
+  --spacing-space-16: 1em;
+  --spacing-space-18: 1.125em;
+  --spacing-space-20: 1.25em;
+  --spacing-space-24: 1.5em;
+  --spacing-space-32: 2em;
+  --spacing-space-40: 2.5em;
+  --spacing-space-48: 3em;
+  --spacing-space-64: 4em;
+  --spacing-space-80: 5em;
+  --spacing-space-96: 6em;
+  --spacing-space-112: 7em;
+  --spacing-space-128: 8em;
+
+  /* Custom Radius Tokens */
+  --radius-radius-sm: 4px;
+  --radius-radius-md: 9px;
+  --radius-radius-pill: 100px;
+}
+
+:root {
+  /* Exclusive Dark-First Theme Profile */
+  --background: #000000; /* black-canvas */
+  --foreground: #ffffff; /* white */
+  
+  --card: #222529; /* grey-800 */
+  --card-foreground: #ffffff;
+  
+  --popover: #131518; /* grey-900 */
+  --popover-foreground: #ffffff;
+  
+  --primary: #298dff; /* primary-blue */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #131518; /* grey-900 */
+  --secondary-foreground: #a1a7b2; /* grey-300 */
+  
+  --muted: #131518;
+  --muted-foreground: #6c7584; /* grey-500 */
+  
+  --accent: #4da2ff; /* blue-light */
+  --accent-foreground: #ffffff;
+  
+  --destructive: #ef4444;
+  --border: #343940; /* grey-700 */
+  --input: #4b515b; /* grey-600 */
+  --ring: #298dff;
+}
+
+/* Validated Specific Design Palette Mappings */
+:root {
+  --color-primary-blue: #298dff;
+  --color-blue-light: #4da2ff;
+  --color-orange: #ff6c3d;
+  --color-banner-dark: #030f1c;
+  --color-black-canvas: #000000;
+  --color-grey-50: #f4f5f7;
+  --color-grey-800: #222529;
+  --color-grey-900: #131518;
+  --color-grey-300: #a1a7b2;
+  --color-grey-500: #6c7584;
+  --color-white: #ffffff;
+  --color-grey-100: #e0e2e6;
+  --color-grey-200: #c2c6cd;
+  --color-grey-600: #4b515b;
+  --color-grey-700: #343940;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+    transition-timing-function: cubic-bezier(0.51, 0, 0.08, 1);
+    transition-duration: 200ms;
+  }
+  
+  html, body {
+    @apply bg-background text-foreground scroll-smooth antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Hide scrollbar completely – Sui.io style */
+  body::-webkit-scrollbar { display: none; }
+  body { -ms-overflow-style: none; scrollbar-width: none; }
+  
+  /* Selection Colors */
+  ::selection {
+    background-color: rgba(41, 141, 255, 0.2);
+    color: #fff;
+  }
+
+  /* Custom Scrollbar styling — visible on non-body elements */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#343940] rounded-full hover:bg-[#4b515b];
+  }
+}
+
+/* Typography Utility Classes */
+.display-xl {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -4.8px;
+}
+
+.display-l {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 69.33px;
+  font-weight: 400;
+  line-height: 69.33px;
+  letter-spacing: -3.47px;
+}
+
+.display-m {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 53.33px;
+  font-weight: 400;
+  line-height: 58.67px;
+  letter-spacing: -2.67px;
+}
+
+.heading-l {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 39.11px;
+  font-weight: 400;
+  line-height: 43.02px;
+  letter-spacing: -1.56px;
+}
+
+.heading-m {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.81px;
+  letter-spacing: -0.96px;
+}
+
+.heading-s {
+  font-family: var(--font-heading), "TWK Everett", sans-serif;
+  font-size: 18.67px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: -0.49px;
+}
+
+.body-default {
+  font-family: var(--font-sans), "TWK Everett", sans-serif;
+  font-size: 14.22px;
+  font-weight: 400;
+  line-height: 17.78px;
+}
+
+.body-small {
+  font-family: var(--font-sans), "TWK Everett", sans-serif;
+  font-size: 12.44px;
+  font-weight: 400;
+  line-height: 15.56px;
+  letter-spacing: -0.06px;
+}
+
+.body-xs {
+  font-family: var(--font-sans), "TWK Everett", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.ui-label {
+  font-family: var(--font-sans), "TWK Everett", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: -0.18px;
+}
+
+.mono-label {
+  font-family: var(--font-mono), "TWK Everett Mono", monospace;
+  font-size: 12.44px;
+  font-weight: 400;
+  line-height: 17.42px;
+  letter-spacing: -0.25px;
+}
+
+.mono-label-bold {
+  font-family: var(--font-mono), "TWK Everett Mono", monospace;
+  font-size: 11.56px;
+  font-weight: 500;
+  line-height: 14.44px;
+  letter-spacing: -0.75px;
+}
+
+/* Custom UI Grid, Glows & Card Elements */
+.sui-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(41, 141, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(41, 141, 255, 0.015) 1px, transparent 1px);
+}
+
+.sui-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sui-glow-blue {
+  background: radial-gradient(circle, #298dff 0%, transparent 70%);
+}
+
+.sui-glow-cyan {
+  background: radial-gradient(circle, #4da2ff 0%, transparent 70%);
+}
+
+.sui-glow-orange {
+  background: radial-gradient(circle, #ff6c3d 0%, transparent 70%);
+}
+
+/* Timeline Custom Styles */
+.timeline_progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  color: #343940;
+}
+
+.timeline_current {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #298dff, transparent);
+  z-index: 2;
+}
+
+.timeline_cube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 2px solid #298dff;
+  box-shadow: 0 0 10px #298dff;
+  z-index: 3;
+}
+
+/* ============================================
+   Sui.io–inspired Animation Utilities
+   ============================================ */
+
+/* Sharp gradient text – follows mouse position via CSS vars */
+.sharp-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(
+    circle at var(--text-x, 50%) var(--text-y, 50%),
+    #ffffff 0%,
+    #ffffff 40%,
+    #298dff 80%,
+    rgba(41, 141, 255, 0.1) 95%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  will-change: background-image;
+}
+
+/* Text stagger reveal lines */
+.reveal-line {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.25em;
+  position: relative;
+  text-shadow: 0 1.25em currentColor;
+}
+
+/* Section fade in from below */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.65s cubic-bezier(0.51, 0, 0.08, 1) forwards;
+}
+
+/* Subtle pulsing glow for active elements */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(41, 141, 255, 0.3), 0 0 16px rgba(41, 141, 255, 0.1); }
+  50% { box-shadow: 0 0 14px rgba(41, 141, 255, 0.5), 0 0 28px rgba(41, 141, 255, 0.2); }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+/* Lenis-style smooth scroll indication */
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(6px); opacity: 0.5; }
+}
+
+.animate-scroll-bounce {
+  animation: scrollBounce 1.5s ease-in-out infinite;
+}
+
+/* Gradient border animation */
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(41, 141, 255, 0.2); }
+  50% { border-color: rgba(41, 141, 255, 0.5); }
+}
+
+.animate-border-glow {
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+/* Section divider with gradient */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #343940, transparent);
+  margin: 0 auto;
+}
+
+/* Enhanced card hover glow */
+.card-glow:hover {
+  box-shadow: 
+    0 0 0 1px rgba(41, 141, 255, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(41, 141, 255, 0.04);
+}
