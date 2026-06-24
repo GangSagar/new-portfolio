@@ -1,81 +1,112 @@
 # Ganga Portfolio Platform
 
-A modern, highly performant personal branding platform showcasing AI Engineering, Backend Development, Multi-Agent Systems, and System Architecture.
+A modern, highly performant personal branding portfolio showcasing backend engineering, AI systems development, and clean architecture.
 
-## Architecture
+---
 
-- **Frontend**: Next.js 15 (App Router, Tailwind CSS, shadcn/ui, Framer Motion)
-- **Backend**: Django REST Framework
-- **Database**: PostgreSQL
-- **Analytics**: PostHog
-- **Email Service**: Resend
+## 🚀 Live Deployments
 
-## Prerequisites
+* **Frontend (Vercel)**: [https://new-portfolio-five-lilac.vercel.app/](https://new-portfolio-five-lilac.vercel.app/)
+* **Backend API (Render)**: [https://new-portfolio-m504.onrender.com](https://new-portfolio-m504.onrender.com)
+* **Database (Neon)**: Managed Serverless PostgreSQL (AWS Region)
 
-- Node.js >= 18
-- pnpm (or npm/yarn) for frontend dependencies
-- Python 3.11+ and `poetry` for backend dependencies
-- Docker & Docker Compose (optional, for local development)
-- PostgreSQL instance (local or remote)
+---
 
-## Getting Started
+## 🛠️ Architecture & Tech Stack
 
-### Frontend
+| Layer               | Technology                                                                  | Purpose                                                                            |
+| :------------------ | :-------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| **Frontend**  | Next.js 15 (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion | Dynamic UI, dark mode styling, custom animation, responsive layouts                |
+| **Backend**   | Django, Django REST Framework (DRF)                                         | Core API, contact message processing, resume tracking, standard payload envelopes  |
+| **Database**  | PostgreSQL (Neon)                                                           | Persistence layer for projects, experience timeline, skills, and analytics         |
+| **Email API** | Resend SMTP                                                                 | Automated email alerts on visitor contact form submissions                         |
+| **Analytics** | PostHog                                                                     | Client-side and server-side visitor action tracking (downloads, redirects, clicks) |
 
-```bash
-cd frontend
-pnpm install
-pnpm dev   # runs the dev server at http://localhost:3000
-```
 
-### Backend
+## 💻 Local Development
 
-```bash
-cd backend
-poetry install
-cp .env.example .env   # configure DB connection, PostHog, Resend keys
-poetry run python manage.py migrate
-poetry run python manage.py runserver   # runs at http://localhost:8000
-```
+### 1. Backend Setup
 
-## Deployment
+1. Navigate to `/backend`:
+   ```bash
+   cd backend
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Configure local environment variables in a `.env` file (see `.env.example`):
+   ```ini
+   DEBUG=True
+   SECRET_KEY=local-development-key
+   DATABASE_NAME=ganga_portfolio
+   DATABASE_USER=admin
+   DATABASE_PASSWORD=password123
+   DATABASE_HOST=localhost
+   DATABASE_PORT=5432
+   ```
+5. Apply migrations and seed the database:
+   ```bash
+   python manage.py migrate
+   python manage.py shell -c "from scripts.seed import seed_data; seed_data()"
+   ```
+6. Start the server:
+   ```bash
+   python manage.py runserver
+   ```
+
+### 2. Frontend Setup
+
+1. Navigate to `/frontend`:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a local `.env` file containing:
+   ```ini
+   NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+   NEXT_PUBLIC_RESUME_DRIVE_ID=1V6AEZzaX7hX-RVriYVQ6k0EPA_tMvMJV
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🌐 Production Deployment
 
 ### Frontend (Vercel)
 
-1. Push your code to GitHub (already done).
-2. In Vercel, import the repository and select the `frontend` directory as the root.
-3. Set the build command `pnpm install && pnpm build` and the output directory `app/.next`.
-4. Add environment variables (e.g., `NEXT_PUBLIC_API_URL`) matching your backend URL.
-5. Deploy – Vercel will handle caching, CDN, and SSL automatically.
+1. Import the repository in Vercel.
+2. Set the **Root Directory** to `frontend`.
+3. Configure the environment variables:
+   - `NEXT_PUBLIC_API_URL`: Points to your Render backend API.
+   - `NEXT_PUBLIC_RESUME_DRIVE_ID`: Your Google Drive resume PDF file ID.
+4. Deploy the project.
 
-### Backend (Render / Railway / Fly.io)
+### Backend (Render + Neon)
 
-You can deploy the Django backend with any container platform. Below is a Docker‑based example using Render:
-
-1. Create a `Dockerfile` in `backend/` (already present) that installs dependencies and runs `gunicorn`.
-2. In Render, create a new **Web Service** and link to the repository.
-3. Set the **Root Directory** to `backend` and the **Start Command** to `gunicorn backend.wsgi:application --bind 0.0.0.0:10000`.
-4. Add environment variables:
-   - `DATABASE_URL` (PostgreSQL connection string)
-   - `POSTHOG_API_KEY`
-   - `RESEND_API_KEY`
-5. Deploy – Render will build the image and expose it at a public URL.
-
-Alternatively, you can use Docker Compose locally and push to any cloud provider:
-
-```bash
-docker compose -f docker-compose.yml up -d
-```
-
-### Database
-
-- For production, provision a managed PostgreSQL instance (e.g., Supabase, Railway, Render).
-- Apply migrations with `poetry run python manage.py migrate`.
-
-## Contributing
-
-Feel free to open issues or submit pull requests. Follow the contribution guidelines in `CONTRIBUTING.md`.
-
-## License
-
-MIT License.
+1. Deploy a managed Serverless PostgreSQL database on **Neon** and retrieve the connection URL.
+2. In **Render**, create a new **Web Service** from your repository.
+3. Configure the build and start options:
+   - **Runtime**: `Python`
+   - **Build Command**: `pip install -r backend/requirements.txt && python backend/manage.py collectstatic --noinput && python backend/manage.py migrate`
+   - **Start Command**: `gunicorn --chdir backend config.wsgi:application`
+4. Add the environment variables:
+   - `DATABASE_URL`: Connection string from Neon.
+   - `DEBUG`: `False`
+   - `ALLOWED_HOSTS`: `*`
+   - `CORS_ALLOWED_ORIGINS`: Your Vercel domain URL.
+   - `SECRET_KEY`: A secure production key.
+   - `RESEND_API_KEY`: SMTP authorization key.
+   - `NOTIFY_EMAIL`: Destination email for alerts.
+5. Save and deploy. Populate the database by running `python backend/manage.py shell -c "from scripts.seed import seed_data; seed_data()"` via Render's Web Shell.

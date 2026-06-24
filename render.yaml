@@ -31,3 +31,5 @@ services:
 databases:
   - name: ganga-portfolio-db
     plan: free
+
+temp: postgresql://neondb_owner:npg_B3QCaRAw2npU@ep-cold-salad-a7sqq7wi.ap-southeast-2.aws.neon.tech/neondb?sslmode=require
