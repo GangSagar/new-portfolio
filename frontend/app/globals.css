@@ -132,50 +132,98 @@
 /* Typography Utility Classes */
 .display-xl {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 80px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 80px;
-  letter-spacing: -4.8px;
+  line-height: 46px;
+  letter-spacing: -1.8px;
+}
+
+@media (min-width: 768px) {
+  .display-xl {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -4.8px;
+  }
 }
 
 .display-l {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 69.33px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 69.33px;
-  letter-spacing: -3.47px;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+}
+
+@media (min-width: 768px) {
+  .display-l {
+    font-size: 69.33px;
+    line-height: 69.33px;
+    letter-spacing: -3.47px;
+  }
 }
 
 .display-m {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 53.33px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 58.67px;
-  letter-spacing: -2.67px;
+  line-height: 32px;
+  letter-spacing: -0.8px;
+}
+
+@media (min-width: 768px) {
+  .display-m {
+    font-size: 53.33px;
+    line-height: 58.67px;
+    letter-spacing: -2.67px;
+  }
 }
 
 .heading-l {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 39.11px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 43.02px;
-  letter-spacing: -1.56px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  .heading-l {
+    font-size: 39.11px;
+    line-height: 43.02px;
+    letter-spacing: -1.56px;
+  }
 }
 
 .heading-m {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 28.81px;
-  letter-spacing: -0.96px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+}
+
+@media (min-width: 768px) {
+  .heading-m {
+    font-size: 24px;
+    line-height: 28.81px;
+    letter-spacing: -0.96px;
+  }
 }
 
 .heading-s {
   font-family: var(--font-heading), "TWK Everett", sans-serif;
-  font-size: 18.67px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 22.4px;
-  letter-spacing: -0.49px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+@media (min-width: 768px) {
+  .heading-s {
+    font-size: 18.67px;
+    line-height: 22.4px;
+    letter-spacing: -0.49px;
+  }
 }
 
 .body-default {

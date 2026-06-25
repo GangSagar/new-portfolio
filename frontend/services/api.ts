@@ -57,15 +57,15 @@ export async function fetchSocialLinks(): Promise<SocialLink[]> {
   return apiFetch<SocialLink[]>("/social-links/");
 }
 
-export async function submitContactMessage(name: string, email: string, message: string): Promise<any> {
-  return apiFetch<any>("/contact/", {
+export async function submitContactMessage(name: string, email: string, message: string): Promise<unknown> {
+  return apiFetch<unknown>("/contact/", {
     method: "POST",
     body: JSON.stringify({ name, email, message }),
   });
 }
 
-export async function trackResumeDownload(sessionId?: string): Promise<any> {
-  return apiFetch<any>("/resume/download/", {
+export async function trackResumeDownload(sessionId?: string): Promise<unknown> {
+  return apiFetch<unknown>("/resume/download/", {
     method: "POST",
     body: JSON.stringify({ session_id: sessionId || "web-visitor" }),
   });
@@ -74,14 +74,14 @@ export async function trackResumeDownload(sessionId?: string): Promise<any> {
 export async function trackAnalyticsEvent(
   eventName: string,
   page: string,
-  metadata: Record<string, any> = {}
-): Promise<any> {
+  metadata: Record<string, unknown> = {}
+): Promise<unknown> {
   // Capture client-side in PostHog
   if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
     posthog.capture(eventName, { page, ...metadata });
   }
 
-  return apiFetch<any>("/analytics/event/", {
+  return apiFetch<unknown>("/analytics/event/", {
     method: "POST",
     body: JSON.stringify({ event_name: eventName, page, metadata }),
   });

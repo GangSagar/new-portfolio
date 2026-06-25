@@ -46,7 +46,7 @@ export default function Skills({ skills }: SkillsProps) {
   };
 
   return (
-    <section id="skills" className="py-space-64 max-w-[1200px] mx-auto px-6 relative">
+    <section id="skills" className="py-space-64 max-w-[1200px] mx-auto px-6 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/3 left-10 w-[300px] h-[300px] sui-glow sui-glow-blue opacity-10 pointer-events-none" />
 

@@ -50,15 +50,16 @@ export default function Contact() {
       });
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    } catch (err: any) {
+    } catch (err) {
       console.error("Contact submit error:", err);
       setStatus("error");
-      setErrorMessage(err.message || "An unexpected error occurred. Please try again.");
+      const message = err instanceof Error ? err.message : "An unexpected error occurred. Please try again.";
+      setErrorMessage(message);
     }
   };
 
   return (
-    <section id="contact" className="py-space-64 max-w-[1200px] mx-auto px-6 relative">
+    <section id="contact" className="py-space-64 max-w-[1200px] mx-auto px-6 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] sui-glow sui-glow-blue opacity-10 pointer-events-none" />
 

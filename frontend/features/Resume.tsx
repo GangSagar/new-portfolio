@@ -21,7 +21,7 @@ export default function Resume() {
   };
 
   return (
-    <section id="resume" className="py-space-64 max-w-[1200px] mx-auto px-6 relative">
+    <section id="resume" className="py-space-64 max-w-[1200px] mx-auto px-6 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute bottom-10 left-1/3 w-[350px] h-[350px] sui-glow sui-glow-blue opacity-10 pointer-events-none" />
 

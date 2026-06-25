@@ -55,7 +55,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-space-96 max-w-[1200px] mx-auto px-6 relative bg-black-canvas">
+    <section id="about" className="py-space-96 max-w-[1200px] mx-auto px-6 relative bg-black-canvas overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-10 right-10 w-[350px] h-[350px] sui-glow sui-glow-cyan opacity-8 pointer-events-none" />
 

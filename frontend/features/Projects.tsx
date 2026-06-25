@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { Project } from "@/types";
 import { ExternalLink, TrendingUp } from "lucide-react";
 import { trackAnalyticsEvent } from "@/services/api";
@@ -52,11 +52,11 @@ export default function Projects({ projects }: ProjectsProps) {
   // Animate the position of the indicator cube
   const cubeY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  useEffect(() => {
-    if (projects.length > 0) {
-      setRevealedStates(new Array(projects.length).fill(false));
-    }
-  }, [projects]);
+  const [prevProjects, setPrevProjects] = useState<Project[]>([]);
+  if (projects !== prevProjects) {
+    setPrevProjects(projects);
+    setRevealedStates(new Array(projects.length).fill(false));
+  }
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     if (projects.length === 0) return;

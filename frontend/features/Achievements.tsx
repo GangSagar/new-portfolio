@@ -34,7 +34,7 @@ export default function Achievements({ achievements, certifications }: Achieveme
   };
 
   return (
-    <section id="achievements" className="py-space-64 max-w-[1200px] mx-auto px-6 relative">
+    <section id="achievements" className="py-space-64 max-w-[1200px] mx-auto px-6 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sui-glow sui-glow-blue opacity-10 pointer-events-none" />
 
@@ -113,6 +113,53 @@ export default function Achievements({ achievements, certifications }: Achieveme
           </motion.div>
         </div>
 
+        {/* Certifications Column */}
+        <div className="flex flex-col">
+          <h3 className="heading-s font-normal text-white uppercase tracking-wider mb-space-24 flex items-center gap-space-12 pl-space-16 justify-center lg:justify-start">
+            <ShieldCheck className="size-5 text-[#298dff]" />
+            Verified Certifications
+          </h3>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="space-y-space-24"
+          >
+            {certifications.map((cert) => (
+              <motion.div
+                key={cert.id}
+                variants={itemVariants}
+                className="bg-[#131518] border border-[#343940]/60 p-space-32 rounded-[32px] md:rounded-[40px] hover:border-[#298dff]/25 transition-all duration-500 relative overflow-hidden group flex flex-col justify-between card-glow"
+              >
+                <div className="flex justify-between items-start gap-space-16 md:px-space-12">
+                  <div className="flex-1">
+                    <span className="mono-label-bold text-[#298dff] bg-[#000000] px-space-12 py-space-4 border border-[#343940] rounded-full uppercase tracking-wider">
+                      {cert.issuer}
+                    </span>
+                    <h4 className="heading-s font-normal text-white mt-space-16 group-hover:text-[#298dff] transition-colors">
+                      {cert.name}
+                    </h4>
+                    <p className="mono-label text-[#6c7584] mt-space-12">
+                      Issued {formatDate(cert.issue_date)}
+                    </p>
+                  </div>
+                  {cert.certificate_url && (
+                    <a
+                      href={cert.certificate_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-[#131518]/80 border border-[#343940] hover:bg-[#298dff]/10 hover:border-[#298dff]/25 hover:text-white rounded-[9px] transition-all duration-300 cursor-pointer shadow-sm shrink-0"
+                      title="Verify Certificate"
+                    >
+                      <ExternalLink className="size-4" />
+                    </a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

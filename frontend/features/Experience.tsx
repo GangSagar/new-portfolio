@@ -33,7 +33,7 @@ export default function ExperienceSection({ experiences }: ExperienceProps) {
   };
 
   return (
-    <section id="experience" className="py-space-64 max-w-[1200px] mx-auto px-6 relative bg-black-canvas">
+    <section id="experience" className="py-space-64 max-w-[1200px] mx-auto px-6 relative bg-black-canvas overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 right-10 w-[350px] h-[350px] sui-glow sui-glow-blue opacity-10 pointer-events-none" />
 
@@ -70,7 +70,7 @@ export default function ExperienceSection({ experiences }: ExperienceProps) {
           viewport={{ once: true, margin: "-80px" }}
           className="space-y-space-48"
         >
-          {experiences.map((exp, idx) => (
+          {experiences.map((exp) => (
             <motion.div
               key={exp.id}
               variants={itemVariants}
